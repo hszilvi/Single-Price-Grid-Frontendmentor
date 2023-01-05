@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+html {
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #e5eff5;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(12.5rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: .625rem;
+  overflow: hidden;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 19.4375rem;
+  height: auto;
+  background-color: white;
+}
+
+@media (min-width: 634px) {
+  body .container {
+    width: 635px;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 'c1 c1' 'c2 c3';
+  }
+}
+
+body .container .card1 {
+  background-color: white;
+  padding: 1rem 1.5rem;
+  height: 33%;
+  margin: 0;
+}
+
+@media (min-width: 634px) {
+  body .container .card1 {
+    grid-area: c1;
+    padding: 1.5rem 2.5rem;
+  }
+}
+
+body .container .card1 h1 {
+  color: #2ab2af;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 634px) {
+  body .container .card1 h1 {
+    font-size: 1.5rem;
+  }
+}
+
+body .container .card1 h3 {
+  color: #c0df34;
+  font-size: .9375rem;
+}
+
+@media (min-width: 634px) {
+  body .container .card1 h3 {
+    font-size: 1.125rem;
+  }
+}
+
+body .container .card1 p {
+  color: #98a6bd;
+  font-size: .875rem;
+  line-height: 1.625rem;
+}
+
+@media (min-width: 634px) {
+  body .container .card1 p {
+    width: 90%;
+    font-size: 1rem;
+  }
+}
+
+body .container .card2 {
+  background-color: #2ab2af;
+  color: white;
+  padding: .5rem 1.5rem .5rem 1.5rem;
+}
+
+@media (min-width: 634px) {
+  body .container .card2 {
+    grid-area: c2;
+    padding: 1rem 2.5rem 1.7rem 2.5rem;
+  }
+}
+
+body .container .card2 h2 {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 634px) {
+  body .container .card2 h2 {
+    font-size: 1.125rem;
+  }
+}
+
+body .container .card2 .price {
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .card2 .price .normal-text {
+  opacity: 50%;
+  padding-top: -.5rem;
+  padding-left: .8rem;
+}
+
+body .container .card2 .price .highlight {
+  font-size: 2rem;
+}
+
+body .container .card2 p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+body .container .card2 button {
+  margin-top: 1rem;
+  width: 100%;
+  height: 3rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #c0df34;
+  border-radius: 5px;
+  border: none;
+  -webkit-box-shadow: 0 8px 8px -4px rgba(0, 0, 0, 0.0973);
+          box-shadow: 0 8px 8px -4px rgba(0, 0, 0, 0.0973);
+}
+
+body .container .card3 {
+  background-color: #2ab2af;
+  opacity: 80%;
+  padding: .5rem 1.5rem 0.5rem 1.5rem;
+  color: white;
+}
+
+@media (min-width: 634px) {
+  body .container .card3 {
+    grid-area: c3;
+    padding: 1rem 2.5rem;
+  }
+}
+
+body .container .card3 h2 {
+  font-size: 1.125rem;
+}
+
+body .container .card3 p {
+  font-size: .875rem;
+  opacity: 75%;
+  line-height: 1.22rem;
+}
+
+@media (min-width: 634px) {
+  body .container .card3 p {
+    line-height: 1.25rem;
+  }
+}
+
+body footer {
+  width: 19.4375rem;
+  font-size: .8rem;
+  padding-left: .5rem;
+  margin: auto;
+}
+
+@media (min-width: 634px) {
+  body footer {
+    width: 39.6875rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
